@@ -21,7 +21,7 @@
   "homepage": "https://github.com/xuybin/custom-prisma-generate#readme",
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpileOnly ./src --output ./src/generated/custom-prisma",
-    "prepublish": "npm run build",
+    "prepublish": "rimraf ./dist ./src/generated && npm run build",
     "build": "tsc --declaration",
     "watch": "tsc -d -w"
   },
@@ -37,6 +37,7 @@
     "@types/meow": "5.0.0",
     "@types/node": "10.12.30",
     "prettier": "1.16.4",
+    "rimraf": "^2.6.3",
     "ts-node-dev": "^1.0.0-pre.32",
     "typescript": "3.3.3333"
   },
