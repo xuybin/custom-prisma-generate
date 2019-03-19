@@ -21,7 +21,7 @@
   "homepage": "https://github.com/xuybin/custom-prisma-generate#readme",
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpileOnly ./src --output ./src/generated/custom-prisma",
-    "prepublish": "rm -rf example/node_modules && npm run build",
+    "prepublish": "npm run build",
     "build": "tsc --declaration",
     "watch": "tsc -d -w"
   },
